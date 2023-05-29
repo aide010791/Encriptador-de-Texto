@@ -1,0 +1,182 @@
+body {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    grid-template-rows: 5%;
+    height: 100vh;
+    margin: 0;
+    background-image: url(Image/fondo3.jpg);
+    background-size: cover;
+}
+
+header {
+    margin: 20px;
+    padding: 20px;
+    grid-column: 1 / span 4;
+}
+
+header img {
+    margin-top: 3%;
+}
+
+.content-column {
+    border: none;
+    padding: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.central-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-encriptar,
+.btn-desencriptar,
+.btn-borrar {
+    height: auto;
+    width: 220px;
+    border-radius: 24px;
+    margin-bottom: 30px;
+    font-family: 'Bungee', cursive;
+    font-size: 24px;
+    text-align: center;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgb(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-color: hsl(317, 100%, 54%);
+    color: black;
+    box-shadow: 0 0 40px 40px hsl(317, 100%, 54%) inset, 0 0 0 0 blue;
+    transition: all 150ms ease-in-out;
+}
+
+.material-symbols-outlined{
+    height: 61px;
+    width: 220px;
+    border-radius: 24px;
+    margin-bottom: 30px;
+    font-size: 30px;
+    text-align: center;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgb(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-color: hsl(317, 100%, 54%);
+    color: black;
+    box-shadow: 0 0 40px 40px hsl(317, 100%, 54%) inset, 0 0 0 0 blue;
+    transition: all 150ms ease-in-out;
+}
+
+
+button:hover {
+    box-shadow: 0 0 10px 0 blue inset, 0 0 10px 4px blue;
+    color: white;
+}
+
+input[type="text"],
+textarea {
+    width: 80%;
+    height: 80%;
+    border-radius: 10px;
+    resize: none;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgb(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.input-text::placeholder,
+.output-text::placeholder {
+    color: #807f7f88;
+}
+
+.input-text,
+.output-text {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+    font-size: 30px;
+    color: white;
+}
+
+.terminos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    position: absolute;
+    width: 80%;
+    left: 10%;
+    bottom: 5%;
+    
+}
+
+.terminos p {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 150%;
+    color: #cac4c4;
+    background: linear-gradient(45deg, rgb(28 25 28), transparent);
+}
+
+.mensaje-encriptado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1%;
+    gap: 16px;
+    position: absolute;
+    top: 68%;
+    text-align: center;
+    width: 100%;
+}
+
+.message-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1%;
+    gap: 16px;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+    text-align: center;
+  }
+  
+.message-container h2,
+.message-container p {
+  width: 80%;
+  padding: 2px;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 120%;
+  text-align: center;
+  color: #ffffff;
+}
+
+.copy-icon {
+    position: absolute;
+    cursor: pointer;
+    bottom: 12%;
+    right: 15%;
+}
+
+.image-preview {
+    position: absolute;
+    left: 50%;
+    top: 15%;
+    transform: translateX(-50%)
+}
+
+.image-preview img {
+    width: 100%;
+    max-width: 400px;
+}
